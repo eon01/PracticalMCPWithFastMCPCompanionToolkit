@@ -1,0 +1,12 @@
+[project]
+name = "langchain-rag-agent"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "faiss-cpu>=1.13.2",
+    "langchain-community>=0.4.1",
+    "langchain-mcp-adapters>=0.2.1",
+    "langchain-openai>=1.1.10",
+    "langchain-text-splitters>=1.1.1",
+    "python-dotenv>=1.2.1",
+]

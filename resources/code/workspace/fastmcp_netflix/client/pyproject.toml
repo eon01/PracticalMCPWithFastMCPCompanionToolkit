@@ -1,0 +1,39 @@
+[project]
+name = "client"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp[openai]==3.0.2",
+    "openai==2.21.0",
+    "python-dotenv==1.2.1",
+]
+
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+from-first = false
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "mcp",
+    "first-party",
+    "local-folder",
+]
+known-first-party = []
+
+[tool.ruff.lint.isort.sections]
+mcp = ["fastmcp"]
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
