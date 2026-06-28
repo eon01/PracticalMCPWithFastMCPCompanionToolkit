@@ -3,7 +3,7 @@ name = "server"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
-    "fastmcp[openai]==3.0.2",
+    "fastmcp[openai]==3.4.2",
     "psycopg2-binary==2.9.11",
     "py-key-value-aio[redis]==0.4.4",
     "sqlalchemy==2.0.46",
